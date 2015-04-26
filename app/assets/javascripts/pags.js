@@ -11,6 +11,7 @@ $(document).ready(function(){
       
       //reset the game
       $("#reset").click(function(){
+          turn = 0;
           $( "p" ).empty();
           $(".grids td").removeClass('o');
           $(".grids td").removeClass('x');
@@ -51,11 +52,13 @@ $(document).ready(function(){
                 x_win_time += 1;
                 $(".cureent_state_x").html(x_win_time);
                 alert("Player X won the game");
+                count_tie = 0;
               
            } else if (Owin == true) {
                 o_win_time += 1;
                $(".cureent_state_o").html(o_win_time);
                 alert("Player O won the game");
+                count_tie = 0;
                
            } else {
               if (count_tie == 9) {
