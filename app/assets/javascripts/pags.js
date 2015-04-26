@@ -31,7 +31,7 @@ $(document).ready(function(){
                 cell.addClass("x");
                 Owin = ocheckWin();
                 Xwin = xcheckWin();
-                turn = 1;
+                turn = 1; //change the term
                 term = "player2: O's"
                 $(".term").html(term);
                 count_tie += 1;
