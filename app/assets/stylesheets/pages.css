@@ -1,0 +1,54 @@
+  #cell11,#cell12,#cell13,#cell21,#cell22,#cell23,#cell31,#cell32,#cell33 {
+         width:100px;
+         height:100px;
+         border-style:none solid solid
+         border-width:5px;
+         border-color:palevioletred;
+    }
+.o {
+    text-align: center;
+    font-size: 25px;
+}
+.x {
+    text-align: center;
+    font-size: 25px;
+}
+.cureent_state_x {
+    font-size:40px;
+    margin-left: auto;
+    margin-right: auto;
+    color:chocolate;
+    background-color:gray;
+}
+.cureent_state_o {
+   font-size:40px;
+   margin-left: auto; 
+   margin-right: auto;
+   color:cornflowerblue;
+   background-color:gray;
+}
+#reset {
+  width:50px;
+  height:30px;
+    
+}
+#undo {
+  width:50px;
+  height:30px;
+  margin-left:40px;
+    
+}
+.grids {
+    margin-bottom: 20px;
+    
+}
+h3 {
+   display: inline;
+   margin-right: 15px;
+}
+.term {
+   color:saddlebrown;
+   background-color:lemonchiffon; 
+    
+}
+    
