@@ -11,3 +11,6 @@ end
 group :production do
   gem 'pg'
 end
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
