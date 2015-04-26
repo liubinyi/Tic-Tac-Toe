@@ -2,6 +2,7 @@ $(document).ready(function(){
       var turn = 0; //0 is x turn, 1 is o turn
       var x_win_time = 0;
       var o_win_time = 0;
+      var count_tie = 0;
       var term = "player1: X's"
       
       $(".cureent_state_x").html(x_win_time);
@@ -33,7 +34,7 @@ $(document).ready(function(){
                 turn = 1;
                 term = "player2: O's"
                 $(".term").html(term);
-                
+                count_tie += 1;
               } else {
                   cell.append("<p>O</p>");
                   cell.addClass("o");
@@ -42,6 +43,7 @@ $(document).ready(function(){
                   turn = 0;
                   term = "player1: X's"
                  $(".term").html(term);
+                 count_tie += 1;
               }
           } //end of if else
           
@@ -56,6 +58,10 @@ $(document).ready(function(){
                 alert("Player O won the game");
                
            } else {
+              if (count_tie == 9) {
+
+                alert("Tie");
+              }
               //check tie 
            }
       }                                                                                   
